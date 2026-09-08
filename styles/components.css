@@ -1,0 +1,55 @@
+.stApp {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-border: #ffffff;
+  --color-text: #0a0a0a;
+  --color-muted: #333f38;
+  --color-primary: #1769aa;
+  --color-bgdark: #8d8d8d;
+  --color-chartsDark:  #000000;
+  --color-textDark: #ffffff;
+  --color-primaryDark: #8d8d8d;
+  --color-sidebarDark:#303030;
+  --color-buttonLight: #ffae44;
+  --color-buttonDark:#303030;
+  --color-textHover:#ff9100;
+  --color-textSelect:#ff9900;
+
+}
+
+div[data-testid="stMetric"] {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+div[data-testid="stMetric"] label {
+    color: var(--color-muted);
+    font-size: 14px;
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--color-text);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricDelta"] {
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .dashboard,
+  .kpi-grid,
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}

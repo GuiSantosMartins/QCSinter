@@ -1,0 +1,14 @@
+# Streamlit - dados sensíveis
+.streamlit/secrets.toml
+.streamlit/users.json
+
+# Dados locais
+data/
+
+# Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+venv/
+.venv/

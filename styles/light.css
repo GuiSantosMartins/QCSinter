@@ -1,0 +1,147 @@
+.stApp {
+    background-color:var(--color-bg);
+    color: rgb(0, 0, 0);
+}
+
+section[data-testid="stSidebar"] {
+    background-color: #ff7b00;
+    color: rgb(255, 255, 255);
+}
+
+section[data-testid="stSidebar"] label{
+    color: rgb(255, 255, 255);
+}
+
+.dvn-stack {
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    padding: 16px;
+}
+/*quadro geral - container*/
+div[data-testid="stMetric"] {
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*quadro geral - lables*/
+div[data-testid="stMetricValue"] {
+    color:var(--color-text)
+}
+/*quadro geral - titles*/
+div[data-testid="stMetric"] label {
+    color:var(--color-text);
+}
+
+/* Every cell */
+div[data-testid="stTable"] div {
+    background-color:var(--color-bg);
+    color:var(--color-text);
+    text-align: center;
+}
+
+/*tables*/
+div[data-testid="stTable"] {
+    background-color: var(--color-bg) !important;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 2px solid #ececec;
+}
+
+/* Header */
+div[data-testid="stTable"] thead th {
+    background-color: var(--color-bg);
+    color: #000000;
+    /*border: 1px solid #ff7b00;*/
+}
+
+/* Rows */
+div[data-testid="stTable"] tbody tr {
+    background-color: var(--color-bg) !important;
+    /*border: 1px solid #ff7b00;*/
+    padding: 12px 10px;
+}
+
+/* Cells */
+div[data-testid="stTable"] td {
+    background-color: var(--color-bg) !important;
+    color: #111827;
+    /*border: 1px solid #ff7b00;*/
+}
+/*chart titles*/
+div[data-testid="stHeading"] h3 {
+    color:rgb(20, 20, 20)
+}
+
+/*button colors*/
+div[data-testid="stButton"] button {
+    background-color: var(--color-buttonLight);
+    color: var(--color-text);
+    border-radius: 8px;
+}
+
+button {
+    background-color:var(--color-buttonLight);
+    color:var(--color-text);
+}
+/*date select form imput*/
+button:hover {
+    color: var(--color-textSelect);
+}
+
+     /*tabs login*/
+button[data-baseweb="tab"]{
+    color: var(--color-text) !important;
+    background-color: var(--color-bg) 
+}
+
+/*login*/
+button[data-baseweb="tab"]:hover{
+    color: var(--color-textSelect) !important; 
+}
+/*login*/
+button[data-baseweb="tab"][aria-selected="true"]{
+    color: var(--color-textSelect) !important; 
+}
+
+/*enter*/ /*page*/
+div.stButton > button{
+    color: var(--color-text)!important;
+    background-color: var(--color-buttonLight);
+}
+
+/*form buttons*/ /*login*/
+div[data-testid="stForm"] button{
+    color:var(--color-text)!important;
+    background-color: var(--color-buttonLight);
+    border-color: var(--color-text);
+}
+
+ /*input*/ /*login & page*/
+    div[data-baseweb="input"]{
+        border-radius:10px;
+        border:1px solid var(--color-buttonLight);
+        background-color: var(--color-buttonLight)
+    }
+
+    /*text*/ /*login & page*/
+    div[data-baseweb="input"] input{
+        background: var(--color-buttonLight);
+        color: var(--color-text);
+        font-size:16px;
+    }
+
+    /*Placeholder*/
+    div[data-baseweb="input"] input::placeholder{
+        color:var(--color-textSelect);
+    }
+
+    /*login & page*/
+    div[data-baseweb="input"]:focus-within{
+        border:3px solid var(--color-bg);
+        box-shadow:0 0 20px var(--color-buttonLight);
+    }
+
+[data-testid="stWidgetLabel"] {
+    color: var(--color-text)
+}

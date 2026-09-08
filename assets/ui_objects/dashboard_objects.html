@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard de Quebras</title>
+    <link rel="stylesheet" href="dashboard_objects.css">
+  </head>
+  <body>
+    <main class="dashboard">
+      <section class="auth-panel">
+        <h1 class="auth-title">Acesso Restrito</h1>
+        <form class="auth-form">
+          <label class="form-field">
+            <span class="form-label">Usuário</span>
+            <input class="form-input" type="text" name="username">
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Senha</span>
+            <input class="form-input" type="password" name="password">
+          </label>
+
+          <button class="button button-primary" type="submit">Entrar</button>
+        </form>
+      </section>
+
+      <aside class="filter-panel">
+        <h2 class="section-title">Filtros</h2>
+        <select class="filter-select" name="percentual">
+          <option>Todos</option>
+          <option>Acima de 3%</option>
+          <option>Abaixo de 3%</option>
+        </select>
+      </aside>
+
+      <section class="content-panel">
+        <h1 class="page-title">Análise de Quebras</h1>
+
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <span class="kpi-label">Perda Total</span>
+            <strong class="kpi-value">1.422</strong>
+          </article>
+
+          <article class="kpi-card">
+            <span class="kpi-label">Total Produzido</span>
+            <strong class="kpi-value">20.907</strong>
+          </article>
+
+          <article class="kpi-card">
+            <span class="kpi-label">Percentual de Quebra</span>
+            <strong class="kpi-value">6,80%</strong>
+          </article>
+        </div>
+
+        <section class="chart-grid">
+          <article class="chart-card">
+            <h2 class="chart-title">Quebra por Máquina</h2>
+            <div class="chart-placeholder">Gráfico</div>
+          </article>
+
+          <article class="chart-card">
+            <h2 class="chart-title">Peças com Maior Perda</h2>
+            <div class="chart-placeholder">Tabela Top 10</div>
+          </article>
+        </section>
+
+        <section class="data-section">
+          <h2 class="section-title">Dados Detalhados</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Peça</th>
+                <th>Lote</th>
+                <th>Máquina</th>
+                <th>Quebras</th>
+                <th>Taxa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01/07/2026</td>
+                <td>1254</td>
+                <td>223359</td>
+                <td>Prensa 2</td>
+                <td>1.422</td>
+                <td>6,80%</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
