@@ -4,13 +4,20 @@ import pandas as pd
 import streamlit as st
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
+DATA_DIR = Path(r"\\SRVDADOS01\Laboratório\RAS\dashboard_app\data")
+
 CACHE_TTL_SECONDS = 60
 
 
 def _read_excel(filename):
-    return pd.read_excel(DATA_DIR / filename, engine="openpyxl")
+    filepath = DATA_DIR / filename
+
+    if not filepath.exists():
+        raise FileNotFoundError(
+            f"Arquivo não encontrado: {filepath}"
+        )
+
+    return pd.read_excel(filepath, engine="openpyxl")
 
 
 def _clean_text(df):
